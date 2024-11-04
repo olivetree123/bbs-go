@@ -4,12 +4,7 @@
     <el-button type="primary" :icon="Plus"> 发表 </el-button>
     <template #dropdown>
       <el-dropdown-menu>
-        <el-dropdown-item
-          v-for="(item, i) in modules"
-          :key="i"
-          :command="item.command"
-          :class="item.icon"
-        >
+        <el-dropdown-item v-for="(item, i) in modules" :key="i" :command="item.command" :class="item.icon">
           {{ item.name }}
         </el-dropdown-item>
       </el-dropdown-menu>
@@ -22,11 +17,11 @@
 import { Plus } from "@element-plus/icons-vue";
 
 const modules = ref([
-  {
-    command: "tweet",
-    name: "发动态",
-    icon: "iconfont icon-tweet2",
-  },
+  // {
+  //   command: "tweet",
+  //   name: "发动态",
+  //   icon: "iconfont icon-tweet2",
+  // },
   {
     command: "topic",
     name: "发帖子",

@@ -14,9 +14,9 @@
         </div>
       </div>
       <div class="right-container">
-        <check-in />
+        <!-- <check-in /> -->
         <site-notice />
-        <score-rank />
+        <!-- <score-rank /> -->
         <friend-links />
       </div>
     </div>
