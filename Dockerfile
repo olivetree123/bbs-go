@@ -54,6 +54,6 @@ COPY --from=admin_builder /code/bbs-go/admin/dist ./server/admin
 COPY ./start.sh ${APP_HOME}/start.sh
 RUN chmod +x ${APP_HOME}/start.sh
 
-EXPOSE 8082 3000
+EXPOSE 8082 3300
 
 CMD ["./start.sh"]
